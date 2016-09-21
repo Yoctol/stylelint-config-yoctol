@@ -1,0 +1,18 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "yoctol-base",
+    "plugin:ava/recommended"
+  ],
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "arrow-parens": "off",
+    "babel/arrow-parens": ["error", "as-needed"]
+  },
+  "plugins": [
+    "ava",
+    "babel"
+  ]
+}

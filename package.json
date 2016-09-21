@@ -1,0 +1,37 @@
+{
+  "name": "stylelint-config-yoctol",
+  "version": "0.1.0",
+  "description": "Yoctol's stylelint config",
+  "author": "Yoctol Info.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yoctol/stylelint-config-yoctol.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "testonly": "ava --verbose \"__tests__/**/*.spec.js\"",
+    "lint": "eslint __tests__ index.js",
+    "test": "npm run lint && npm run testonly"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^13.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.5.0",
+    "eslint-config-yoctol-base": "^0.7.0",
+    "eslint-plugin-ava": "^3.0.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-import": "^1.14.0",
+    "stylelint": "^7.3.1",
+    "stylelint-config-standard": "^13.0.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^7.2.0"
+  },
+  "license": "MIT"
+}
