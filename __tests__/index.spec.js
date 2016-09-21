@@ -86,7 +86,6 @@ test('no warnings with valid css', async t => {
 
   const { errored, results } = data;
   const { warnings } = results[0];
-  console.log(warnings)
   t.falsy(errored, 'no errored');
   t.is(warnings.length, 0, 'flags no warnings');
 });
