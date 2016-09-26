@@ -15,6 +15,10 @@ const validCss = (
 .selector-3[type="text"] {
   display: block;
   box-sizing: border-box;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-grow: 1;
+  order: 2;
   background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
   color: #333;
 }
