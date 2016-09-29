@@ -24,7 +24,7 @@
     "babel-eslint": "^6.1.2",
     "eslint": "^3.5.0",
     "eslint-config-yoctol-base": "^0.8.0",
-    "eslint-plugin-ava": "^3.0.0",
+    "eslint-plugin-ava": "^3.1.0",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^1.14.0",
     "stylelint": "^7.3.1",
