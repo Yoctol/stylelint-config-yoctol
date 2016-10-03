@@ -39,6 +39,28 @@
       ],
     },
     {
+      /* Flex Container(Parent) */
+      properties: [
+        'flex-flow',
+        'flex-direction',
+        'flex-wrap',
+        'justify-content',
+        'align-items',
+        'align-content',
+      ],
+    },
+    {
+      /* Flex Item(Children) */
+      properties: [
+        'flex',
+        'flex-grow',
+        'flex-shrink',
+        'flex-basis',
+        'order',
+        'align-self',
+      ],
+    },
+    {
       /* Color */
       properties: [
         'background',
