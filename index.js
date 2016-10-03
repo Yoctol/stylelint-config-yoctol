@@ -11,6 +11,8 @@ module.exports = {
             'z-index',
             'top',
             'right',
+            'bottom',
+            'left',
           ],
         },
         {
@@ -20,6 +22,7 @@ module.exports = {
             'overflow',
             'box-sizing',
             'width',
+            'min-height',
             'height',
             'padding',
             'border',
