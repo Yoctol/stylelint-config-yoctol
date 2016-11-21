@@ -7,13 +7,7 @@
     "node": true,
     "jest": true
   },
-  "rules": {
-    "arrow-parens": "off",
-    "babel/arrow-parens": [
-      "error",
-      "as-needed"
-    ]
-  },
+  "rules": {},
   "plugins": [
     "babel"
   ]
