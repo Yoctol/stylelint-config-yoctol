@@ -1,3 +1,9 @@
+0.3.0 / 2017-02-06
+==================
+- [dep] update`styleint` to ^7.8.0
+- [dep] update`stylelint-config-standard` to ^16.0.0
+- [change] use yarn on CI
+
 0.2.1 / 2016-10-03
 ==================
 - [doc] fix README and CHANGELOG
