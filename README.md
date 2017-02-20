@@ -3,88 +3,67 @@
 [![npm version][npm-image]][npm-url]
 [![Build Status][circle-image]][circle-url]
 
-##Rules overwritten
+## Rules overwritten
 
-- 'declaration-block-properties-order'
+- 'plugins: stylelint-order'
+- 'order/declaration-block-properties-specified-order'
 ```js
 [
+  // based on https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/
   [
-    // based on https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/
-    {
-      /* Positioning */
-      properties: [
-        'position',
-        'z-index',
-        'top',
-        'right',
-        'bottom',
-        'left',
-      ],
-    },
-    {
-      /* Display & Box Model */
-      properties: [
-        'display',
-        'overflow',
-        'box-sizing',
-        'width',
-        'max-width',
-        'min-width',
-        'height',
-        'max-height',
-        'min-height',
-        'padding',
-        'border',
-        'margin',
-      ],
-    },
-    {
-      /* Flex Container(Parent) */
-      properties: [
-        'flex-flow',
-        'flex-direction',
-        'flex-wrap',
-        'justify-content',
-        'align-items',
-        'align-content',
-      ],
-    },
-    {
-      /* Flex Item(Children) */
-      properties: [
-        'flex',
-        'flex-grow',
-        'flex-shrink',
-        'flex-basis',
-        'order',
-        'align-self',
-      ],
-    },
-    {
-      /* Color */
-      properties: [
-        'background',
-        'background-image',
-        'color',
-        'box-shadow',
-      ],
-    },
-    {
-      /* Text */
-      properties: [
-        'font-family',
-        'font-size',
-        'line-height',
-        'text-align',
-      ],
-    },
-    {
-      /* Other */
-      properties: [
-        'content',
-        'cursor',
-      ],
-    },
+    /* Positioning */
+    'position',
+    'z-index',
+    'top',
+    'right',
+    'bottom',
+    'left',
+
+    /* Display & Box Model */
+    'display',
+    'overflow',
+    'box-sizing',
+    'width',
+    'max-width',
+    'min-width',
+    'height',
+    'max-height',
+    'min-height',
+    'padding',
+    'border',
+    'margin',
+
+    /* Flex Container(Parent) */
+    'flex-flow',
+    'flex-direction',
+    'flex-wrap',
+    'justify-content',
+    'align-items',
+    'align-content',
+
+    /* Flex Item(Children) */
+    'flex',
+    'flex-grow',
+    'flex-shrink',
+    'flex-basis',
+    'order',
+    'align-self',
+
+    /* Color */
+    'background',
+    'background-image',
+    'color',
+    'box-shadow',
+
+    /* Text */
+    'font-family',
+    'font-size',
+    'line-height',
+    'text-align',
+
+    /* Other */
+    'content',
+    'cursor',
   ],
   { unspecified: 'bottomAlphabetical' },
 ],
