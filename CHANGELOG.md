@@ -1,3 +1,7 @@
+0.4.0 / 2017-02-21
+==================
+- [dep] use `stylelint-order` plugin, replacing deprecating `declaration-block-properties-order`
+
 0.3.0 / 2017-02-06
 ==================
 - [dep] update`styleint` to ^7.8.0
