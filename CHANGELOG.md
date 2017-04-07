@@ -1,3 +1,9 @@
+0.5.0 / 2017-04-07
+==================
+- [dep] update `stylelint-order` to ^0.4.3
+- [dep] update `stylelint` to ^7.10.1
+- [dep] other devDependencies update
+
 0.4.0 / 2017-02-21
 ==================
 - [dep] use `stylelint-order` plugin, replacing deprecating `declaration-block-properties-order`
