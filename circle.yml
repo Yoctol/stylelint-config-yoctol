@@ -5,7 +5,7 @@ machine:
   node:
     version: 6
   environment:
-    YARN_VERSION: 0.19.1
+    YARN_VERSION: 0.22.0
     PATH: "${PATH}:${HOME}/.yarn/bin"
 
 
@@ -25,4 +25,5 @@ dependencies:
 
 test:
   override:
-    - npm run test
+    - npm run lint
+    - npm run testonly
