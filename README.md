@@ -1,5 +1,7 @@
 # stylelint-config-yoctol
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Yoctol/stylelint-config-yoctol.svg)](https://greenkeeper.io/)
+
 [![npm version][npm-image]][npm-url]
 [![Build Status][circle-image]][circle-url]
 
