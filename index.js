@@ -2,7 +2,7 @@ module.exports = {
   extends: 'stylelint-config-standard',
   plugins: 'stylelint-order',
   rules: {
-    'order/declaration-block-properties-specified-order': [
+    'order/properties-order': [
       // based on https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/
       [
         /* Positioning */
@@ -24,8 +24,20 @@ module.exports = {
         'max-height',
         'min-height',
         'padding',
+        'padding-top',
+        'padding-right',
+        'padding-bottom',
+        'padding-left',
         'border',
+        'border-top',
+        'border-right',
+        'border-bottom',
+        'border-left',
         'margin',
+        'margin-top',
+        'margin-right',
+        'margin-bottom',
+        'margin-left',
 
         /* Flex Container(Parent) */
         'flex-flow',

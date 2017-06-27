@@ -3,7 +3,7 @@ import stylelint from 'stylelint';
 import config from '../';
 
 const validCss = (
-`@import url(x.css);
+  `@import url(x.css);
 @import url(y.css);
 
 /**
@@ -76,7 +76,7 @@ const validCss = (
 `);
 
 const invalidCss = (
-`a {
+  `a {
   top: .2em;
 }
 `);
