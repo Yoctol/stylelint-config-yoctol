@@ -2,8 +2,7 @@ import stylelint from 'stylelint';
 
 import config from '../';
 
-const validCss = (
-  `@import url(x.css);
+const validCss = `@import url(x.css);
 @import url(y.css);
 
 /**
@@ -14,6 +13,10 @@ const validCss = (
 .selector-3[type="text"] {
   display: block;
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #fefefe;
+  border-radius: 0;
   flex-direction: row;
   align-items: flex-start;
   flex-grow: 1;
@@ -73,13 +76,12 @@ const validCss = (
     content: '→';
   }
 }
-`);
+`;
 
-const invalidCss = (
-  `a {
+const invalidCss = `a {
   top: .2em;
 }
-`);
+`;
 
 it('shows no warnings with valid css', async () => {
   const data = await stylelint.lint({
