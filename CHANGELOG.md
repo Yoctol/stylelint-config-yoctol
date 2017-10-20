@@ -1,3 +1,11 @@
+0.7.0 / 2017-10-20
+==================
+- [breaking] `order/properties-order` changed margin, border, padding order
+
+0.6.0 / 2017-10-18
+==================
+- [dep] update many dependencies
+
 0.5.0 / 2017-04-07
 ==================
 - [dep] update `stylelint-order` to ^0.4.3
