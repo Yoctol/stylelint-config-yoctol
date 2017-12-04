@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "stylelint-config-standard": "^17.0.0",
-    "stylelint-order": "^0.7.0"
+    "stylelint-order": "^0.8.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.1",
