@@ -1,6 +1,13 @@
 {
-  "plugins": [
-    "transform-runtime"
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "7.6"
+        }
+      }
+    ]
   ],
-  "presets": ["latest"]
+  "plugins": ["transform-class-properties", "transform-object-rest-spread"]
 }

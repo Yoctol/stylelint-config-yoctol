@@ -107,5 +107,7 @@ it('shows a warning with invalid css', async () => {
 
   expect(errored).toBeTruthy();
   expect(warnings.length).toBe(1);
-  expect(warnings[0].text).toBe('Expected a leading zero (number-leading-zero)');
+  expect(warnings[0].text).toBe(
+    'Expected a leading zero (number-leading-zero)'
+  );
 });
