@@ -16,6 +16,8 @@ module.exports = {
         /* Display & Box Model */
         'display',
         'overflow',
+        'overflow-x',
+        'overflow-y',
         'box-sizing',
         'width',
         'max-width',
@@ -39,6 +41,7 @@ module.exports = {
         'border-bottom',
         'border-left',
         'border-radius',
+        'outline',
 
         /* Flex Container(Parent) */
         'flex-flow',
@@ -67,6 +70,10 @@ module.exports = {
         'font-size',
         'line-height',
         'text-align',
+
+        /* Effect */
+        'transition',
+        'transform',
 
         /* Other */
         'content',
