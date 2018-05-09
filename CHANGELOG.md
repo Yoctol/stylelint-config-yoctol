@@ -1,3 +1,8 @@
+0.8.0 / 2018-05-09
+==================
+- [dep] update many dependencies
+- [change] `order/properties-order` add more properties order
+
 0.7.0 / 2017-10-20
 ==================
 - [breaking] `order/properties-order` changed margin, border, padding order
