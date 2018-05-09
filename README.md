@@ -6,8 +6,9 @@
 
 ## Rules overwritten
 
-- 'plugins: stylelint-order'
-- 'order/declaration-block-properties-specified-order'
+* 'plugins: stylelint-order'
+* 'order/declaration-block-properties-specified-order'
+
 ```js
 [
   // based on https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/
@@ -23,6 +24,8 @@
     /* Display & Box Model */
     'display',
     'overflow',
+    'overflow-x',
+    'overflow-y',
     'box-sizing',
     'width',
     'max-width',
@@ -30,9 +33,23 @@
     'height',
     'max-height',
     'min-height',
-    'padding',
-    'border',
     'margin',
+    'margin-top',
+    'margin-right',
+    'margin-bottom',
+    'margin-left',
+    'padding',
+    'padding-top',
+    'padding-right',
+    'padding-bottom',
+    'padding-left',
+    'border',
+    'border-top',
+    'border-right',
+    'border-bottom',
+    'border-left',
+    'border-radius',
+    'outline',
 
     /* Flex Container(Parent) */
     'flex-flow',
@@ -62,6 +79,10 @@
     'line-height',
     'text-align',
 
+    /* Effect */
+    'transition',
+    'transform',
+
     /* Other */
     'content',
     'cursor',
@@ -69,7 +90,6 @@
   { unspecified: 'bottomAlphabetical' },
 ],
 ```
-
 
 [npm-image]: https://badge.fury.io/js/stylelint-config-yoctol.svg
 [npm-url]: https://www.npmjs.com/package/stylelint-config-yoctol
