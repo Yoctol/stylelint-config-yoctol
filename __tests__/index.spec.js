@@ -12,17 +12,21 @@ const validCss = `@import url(x.css);
 .selector-2,
 .selector-3[type="text"] {
   display: block;
+  overflow-x: hidden;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 2em;
   border: 1px solid #fefefe;
   border-radius: 0;
+  outline: 1px solid rgb(139, 139, 139);
   flex-direction: row;
   align-items: flex-start;
   flex-grow: 1;
   order: 2;
   background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
   color: #333;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
 }
 
 .selector-a,
