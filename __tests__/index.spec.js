@@ -18,6 +18,8 @@ const validCss = `@import url(x.css);
   padding: 2em;
   border: 1px solid #fefefe;
   border-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
   outline: 1px solid rgb(139, 139, 139);
   flex-direction: row;
   align-items: flex-start;
@@ -26,7 +28,11 @@ const validCss = `@import url(x.css);
   background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
   color: #333;
   font-size: 16px;
+  text-decoration: underline;
+  white-space: nowrap;
   transition: all 0.2s ease-in-out;
+  opacity: 0.5;
+  user-select: none;
 }
 
 .selector-a,
@@ -83,6 +89,7 @@ const validCss = `@import url(x.css);
 `;
 
 const invalidCss = `a {
+  right: 0.1em;
   top: .2em;
 }
 `;
@@ -110,8 +117,11 @@ it('shows a warning with invalid css', async () => {
   const { warnings } = results[0];
 
   expect(errored).toBeTruthy();
-  expect(warnings.length).toBe(1);
+  expect(warnings.length).toBe(2);
   expect(warnings[0].text).toBe(
+    'Expected "top" to come before "right" (order/properties-order)'
+  );
+  expect(warnings[1].text).toBe(
     'Expected a leading zero (number-leading-zero)'
   );
 });

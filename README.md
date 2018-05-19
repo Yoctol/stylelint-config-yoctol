@@ -49,6 +49,10 @@
     'border-bottom',
     'border-left',
     'border-radius',
+    'border-top-right-radius',
+    'border-bottom-right-radius',
+    'border-bottom-left-radius',
+    'border-top-left-radius',
     'outline',
 
     /* Flex Container(Parent) */
@@ -78,12 +82,22 @@
     'font-size',
     'line-height',
     'text-align',
+    'text-decoration',
+    'text-shadow',
+    'vertical-align',
+    'white-space',
 
     /* Effect */
     'transition',
     'transform',
+    'opacity',
+    'visibility',
+    'appearance',
+    'user-select',
 
     /* Other */
+    'word-break',
+    'word-wrap',
     'content',
     'cursor',
   ],
