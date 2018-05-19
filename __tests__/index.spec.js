@@ -30,9 +30,20 @@ const validCss = `@import url(x.css);
   font-size: 16px;
   text-decoration: underline;
   white-space: nowrap;
-  transition: all 0.2s ease-in-out;
   opacity: 0.5;
+  transition: all 0.2s ease-in-out;
   user-select: none;
+}
+
+.selector-4 {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(0deg, #fafafa, #fafafa);
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: 25% 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 .selector-a,
@@ -67,6 +78,10 @@ const validCss = `@import url(x.css);
     height: 10rem;
     margin: 10px;
     margin-bottom: 5px;
+    box-shadow:
+      0 1px 1px #000,
+      0 1px 0 #fff,
+      2px 2px 1px 1px #ccc inset;
     background-image:
       repeating-linear-gradient(
         -45deg,
@@ -74,10 +89,6 @@ const validCss = `@import url(x.css);
         #fff 25px,
         rgba(255, 255, 255, 1) 50px
       );
-    box-shadow:
-      0 1px 1px #000,
-      0 1px 0 #fff,
-      2px 2px 1px 1px #ccc inset;
   }
 
   /* Flush nested single line comment */
