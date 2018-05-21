@@ -12,26 +12,27 @@ const validCss = `@import url(x.css);
 .selector-2,
 .selector-3[type="text"] {
   display: block;
-  overflow-x: hidden;
   box-sizing: border-box;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: flex-start;
+  order: 2;
   margin: 0 auto;
   padding: 2em;
+  overflow-x: hidden;
   border: 1px solid #fefefe;
   border-radius: 0;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
   outline: 1px solid rgb(139, 139, 139);
-  flex-direction: row;
-  align-items: flex-start;
-  flex-grow: 1;
-  order: 2;
+  opacity: 0.5;
   background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
   color: #333;
   font-size: 16px;
   text-decoration: underline;
   white-space: nowrap;
   transition: all 0.2s ease-in-out;
-  opacity: 0.5;
+  cursor: pointer;
   user-select: none;
 }
 
@@ -82,8 +83,8 @@ const validCss = `@import url(x.css);
 
   /* Flush nested single line comment */
   .selector::after {
-    background-image: url(x.svg);
     content: '→';
+    background-image: url(x.svg);
   }
 }
 `;

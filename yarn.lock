@@ -1550,6 +1550,10 @@ cryptiles@3.x.x:
   dependencies:
     boom "5.x.x"
 
+css-property-sort-order-smacss@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/css-property-sort-order-smacss/-/css-property-sort-order-smacss-2.1.2.tgz#88223f709857dfe4be1462686c4b74497683454f"
+
 cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/cssom/-/cssom-0.3.2.tgz#b8036170c79f07a90ff2f16e22284027a243848b"
