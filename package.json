@@ -8,15 +8,15 @@
     "url": "https://github.com/Yoctol/stylelint-config-yoctol.git"
   },
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js"],
   "scripts": {
     "testonly": "jest",
+    "testonly:watch": "jest --watch",
     "lint": "eslint __tests__ index.js",
     "test": "npm run lint && npm run testonly"
   },
   "dependencies": {
+    "css-property-sort-order-smacss": "^2.1.2",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1"
   },
@@ -42,23 +42,15 @@
   "license": "MIT",
   "jest": {
     "verbose": true,
-    "transformIgnorePatterns": [
-      "/node_modules/"
-    ]
+    "transformIgnorePatterns": ["/node_modules/"]
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
+    "*.js": ["eslint --fix", "git add"],
     "package.json": [
       "prettier-package-json --write",
       "prettier package.json --write",
       "git add"
     ],
-    ".babelrc": [
-      "prettier .babelrc --write",
-      "git add"
-    ]
+    ".babelrc": ["prettier .babelrc --write", "git add"]
   }
 }
