@@ -1,3 +1,7 @@
+1.0.0 / 2018-05-21
+==================
+- [breaking] `order/properties-order` use `css-property-sort-order-smacss` and custom group order
+
 0.8.0 / 2018-05-09
 ==================
 - [dep] update many dependencies
