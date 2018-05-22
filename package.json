@@ -1,66 +1,74 @@
 {
   "name": "stylelint-config-yoctol",
-  "version": "1.0.0",
   "description": "Yoctol's stylelint config",
+  "license": "MIT",
   "author": "Yoctol Info.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Yoctol/stylelint-config-yoctol.git"
   },
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "files": ["lib"],
   "scripts": {
+    "build":
+      "cross-env NODE_ENV=production npm run clean && babel src --out-dir lib --ignore __tests__,__mocks__",
+    "clean": "rimraf lib",
+    "precommit": "lint-staged",
+    "lint": "eslint src",
+    "prepublish": "npm run build",
+    "test": "npm run lint && npm run testonly",
     "testonly": "jest",
     "testonly:watch": "jest --watch",
-    "lint": "eslint __tests__ index.js",
-    "test": "npm run lint && npm run testonly"
+    "preversion": "npm run test"
   },
   "dependencies": {
     "css-property-sort-order-smacss": "^2.1.2",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1"
   },
-  "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.19.1",
-    "eslint-config-yoctol-base": "^0.15.1",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "husky": "^0.14.3",
-    "jest": "^22.4.3",
-    "lint-staged": "^7.1.0",
-    "prettier": "^1.12.1",
-    "prettier-package-json": "^1.6.0",
-    "stylelint": "^9.2.0"
-  },
   "peerDependencies": {
     "stylelint": "^9.2.0"
   },
-  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.4",
+    "cross-env": "^5.1.5",
+    "eslint": "^4.19.1",
+    "eslint-config-yoctol-base": "^0.15.1",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.4",
+    "lint-staged": "^7.1.2",
+    "prettier": "^1.12.1",
+    "prettier-package-json": "^1.6.0",
+    "rimraf": "^2.6.2",
+    "stylelint": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=7.6"
+  },
   "jest": {
     "verbose": true,
-    "transformIgnorePatterns": [
-      "/node_modules/"
-    ]
+    "transformIgnorePatterns": ["/node_modules/", "lib"],
+    "testPathIgnorePatterns": ["/node_modules/", "lib"],
+    "resetModules": true,
+    "resetMocks": true
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
+    "*.js": ["eslint --fix", "git add"],
     "package.json": [
       "prettier-package-json --write",
-      "prettier package.json --write",
+      "prettier --write",
       "git add"
     ],
-    ".babelrc": [
-      "prettier .babelrc --write",
-      "git add"
-    ]
+    ".babelrc": ["prettier --write", "git add"]
   }
 }
