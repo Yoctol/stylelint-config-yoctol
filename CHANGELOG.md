@@ -1,3 +1,7 @@
+1.0.1 / 2018-05-22
+==================
+- [fix] babel build, package.json `files` field
+
 1.0.0 / 2018-05-21
 ==================
 - [breaking] `order/properties-order` use `css-property-sort-order-smacss` and custom group order
