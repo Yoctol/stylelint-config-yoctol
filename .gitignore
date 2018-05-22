@@ -4,6 +4,6 @@ yarn-error.log
 node_modules
 rules.spec.js
 *.tar.gz
-.nyc_output
 coverage
 tmp
+lib
