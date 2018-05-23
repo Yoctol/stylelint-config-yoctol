@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/Yoctol/stylelint-config-yoctol.git"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "files": ["lib"],
   "scripts": {
