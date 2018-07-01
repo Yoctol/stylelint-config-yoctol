@@ -1,7 +1,7 @@
 # stylelint-config-yoctol
 
 [![npm version][npm-image]][npm-url]
-[![Build Status][circle-image]][circle-url]
+[![Build Status](https://circleci.com/gh/Yoctol/stylelint-config-yoctol.svg?style=shield)](https://circleci.com/gh/Yoctol/stylelint-config-yoctol)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Yoctol/stylelint-config-yoctol.svg)](https://greenkeeper.io/)
 
 ## Rules overwritten
