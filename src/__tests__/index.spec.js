@@ -1,6 +1,6 @@
 import stylelint from 'stylelint';
 
-import config from '../';
+import config from '..';
 
 const validCss = `@import url(x.css);
 @import url(y.css);

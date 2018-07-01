@@ -1,0 +1,38 @@
+version: 2
+# Reference variables.
+references:
+  docker_default: &docker_node_8
+    working_directory: /tmp/app
+    docker:
+      - image: node:8
+    environment:
+      TZ: "/usr/share/zoneinfo/Asia/Taipei"
+
+jobs:
+  build:
+    <<: *docker_node_8
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - 180625-node-8-cache-{{checksum "yarn.lock"}}
+            - 180625-node-8-cache
+      - run:
+          name: install dependencies
+          command: |
+            yarn config set cache-folder ~/.yarn-cache
+            yarn
+      - run:
+          name: build
+          command: yarn run build
+      - run:
+          name: run lint
+          command: yarn run lint
+      - run:
+          name: run test
+          command: yarn run testonly --no-cache --colors
+      - save_cache:
+          key: 180625-node-8-cache-{{checksum "yarn.lock"}}
+          paths:
+            - ~/.yarn-cache
+            - ./node_modules

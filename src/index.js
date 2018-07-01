@@ -1,6 +1,6 @@
-const order = require('./order');
+import order from './order';
 
-module.exports = {
+export default {
   extends: 'stylelint-config-standard',
   plugins: 'stylelint-order',
   rules: {
