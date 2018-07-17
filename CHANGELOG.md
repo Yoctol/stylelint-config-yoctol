@@ -1,3 +1,7 @@
+1.1.0 / 2018-07-17
+==================
+- [dep] add `stylelint-config-prettier`
+
 1.0.1 / 2018-05-22
 ==================
 - [fix] babel build, package.json `files` field
