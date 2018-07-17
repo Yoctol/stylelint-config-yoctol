@@ -23,9 +23,6 @@ jobs:
             yarn config set cache-folder ~/.yarn-cache
             yarn
       - run:
-          name: build
-          command: yarn run build
-      - run:
           name: run lint
           command: yarn run lint
       - run:

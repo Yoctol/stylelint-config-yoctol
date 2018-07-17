@@ -8,16 +8,13 @@
     "url": "https://github.com/Yoctol/stylelint-config-yoctol.git"
   },
   "version": "1.1.0",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "files": [
-    "lib"
+    "src"
   ],
   "scripts": {
-    "build": "npm run clean && cross-env NODE_ENV=production babel src -d lib",
-    "clean": "rimraf lib",
     "precommit": "lint-staged",
     "lint": "eslint src .babelrc.js",
-    "prepublishOnly": "npm run build",
     "test": "npm run lint && npm run testonly",
     "testonly": "jest",
     "testonly:watch": "jest --watch",
@@ -33,10 +30,7 @@
     "stylelint": "^9.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.54",
     "@babel/core": "^7.0.0-beta.54",
-    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.54",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.54",
     "@babel/preset-env": "^7.0.0-beta.54",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^8.2.6",
@@ -77,10 +71,6 @@
     ],
     "package.json": [
       "prettier-package-json --write",
-      "git add"
-    ],
-    ".babelrc": [
-      "prettier --write",
       "git add"
     ]
   }

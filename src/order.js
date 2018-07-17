@@ -1,4 +1,4 @@
-import smacssOrder from 'css-property-sort-order-smacss';
+const smacssOrder = require('css-property-sort-order-smacss');
 
 const order = {};
 
@@ -12,4 +12,4 @@ Object.keys(smacssOrder).forEach(category => {
   order[category] = properties;
 });
 
-export default order;
+module.exports = order;
