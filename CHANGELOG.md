@@ -1,3 +1,7 @@
+1.1.1 / 2018-07-17
+==================
+- [change] use commonJS modules instead of ES6 modules
+
 1.1.0 / 2018-07-17
 ==================
 - [dep] add `stylelint-config-prettier`
