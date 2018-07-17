@@ -61,9 +61,7 @@ const validCss = `@import url(x.css);
 }
 
 /* Flush single line comment */
-@media
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .selector {
     height: 10rem;
     margin: 10px;
@@ -89,7 +87,8 @@ const validCss = `@import url(x.css);
 }
 `;
 
-const invalidCss = `a {
+const invalidCss = `
+a {
   right: 0.1em;
   top: .2em;
 }
@@ -118,11 +117,8 @@ it('shows a warning with invalid css', async () => {
   const { warnings } = results[0];
 
   expect(errored).toBeTruthy();
-  expect(warnings.length).toBe(2);
+  expect(warnings.length).toBe(1);
   expect(warnings[0].text).toBe(
     'Expected "top" to come before "right" (order/properties-order)'
-  );
-  expect(warnings[1].text).toBe(
-    'Expected a leading zero (number-leading-zero)'
   );
 });
