@@ -1,4 +1,4 @@
-import order from './order';
+const order = require('./order');
 
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
