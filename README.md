@@ -6,9 +6,9 @@
 
 ## Rules overwritten
 
-* extends: [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
-* plugins: [stylelint-order](https://github.com/hudochenkov/stylelint-order)
-* `order/properties-order`: Follow [css-property-sort-order-smacss](https://github.com/cahamilton/css-property-sort-order-smacss/blob/master/index.js)
+- extends: [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
+- plugins: [stylelint-order](https://github.com/hudochenkov/stylelint-order)
+- `order/properties-order`: Follow [css-property-sort-order-smacss](https://github.com/cahamilton/css-property-sort-order-smacss/blob/master/index.js)
 
 [npm-image]: https://badge.fury.io/js/stylelint-config-yoctol.svg
 [npm-url]: https://www.npmjs.com/package/stylelint-config-yoctol
