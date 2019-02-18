@@ -27,7 +27,7 @@
     "stylelint-order": "^2.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^9.2.0"
+    "stylelint": ">=9.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
