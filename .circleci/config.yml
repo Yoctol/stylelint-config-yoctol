@@ -1,22 +1,22 @@
 version: 2
 # Reference variables.
 references:
-  docker_default: &docker_node_8
+  docker_default: &docker_node_10
     working_directory: /tmp/app
     docker:
-      - image: node:8
+      - image: node:10
     environment:
       TZ: "/usr/share/zoneinfo/Asia/Taipei"
 
 jobs:
   build:
-    <<: *docker_node_8
+    <<: *docker_node_10
     steps:
       - checkout
       - restore_cache:
           keys:
-            - 180625-node-8-cache-{{checksum "yarn.lock"}}
-            - 180625-node-8-cache
+            - 180625-node-10-cache-{{checksum "yarn.lock"}}
+            - 180625-node-10-cache
       - run:
           name: install dependencies
           command: |
@@ -29,7 +29,7 @@ jobs:
           name: run test
           command: yarn run testonly --no-cache --colors
       - save_cache:
-          key: 180625-node-8-cache-{{checksum "yarn.lock"}}
+          key: 180625-node-10-cache-{{checksum "yarn.lock"}}
           paths:
             - ~/.yarn-cache
             - ./node_modules
