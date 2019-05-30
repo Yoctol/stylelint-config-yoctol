@@ -1930,21 +1930,21 @@ eslint-config-airbnb-base@^13.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-prettier@^4.0.0:
+eslint-config-prettier@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-4.3.0.tgz#c55c1fcac8ce4518aeb77906984e134d9eb5a4f0"
   integrity sha512-sZwhSTHVVz78+kYD3t5pCWSYEdVSBR0PXnwjDRsUs8ytIrK8PLXw+6FKp8r3Z7rx4ZszdetWlXYKOHoUrrwPlA==
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-yoctol-base@^0.19.1:
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-yoctol-base/-/eslint-config-yoctol-base-0.19.1.tgz#6659d68c931ea1cc08e6a2c3c887d247ac67ec1b"
-  integrity sha512-e+uPcsnJP+ISZZPNtoGBiTZPuw53EAAMGhycu1ddnXxLuTgO8whaLI4f4OJPqv4wAZxyiXEUwtizrkfAziBCFA==
+eslint-config-yoctol-base@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-yoctol-base/-/eslint-config-yoctol-base-0.20.0.tgz#3bd0cc93c894735ba7309fb841ca3bab0a84c96d"
+  integrity sha512-nvY4LMDazcYSKXTSEFoQrrmuXFSwk5tEa4VW6styySXULBAGhQQtZ7moUM8Whh6olCU8JXcXmccIc008IjBvxg==
   dependencies:
     eslint-config-airbnb-base "^13.1.0"
-    eslint-config-prettier "^4.0.0"
-    prettier "^1.16.1"
+    eslint-config-prettier "^4.3.0"
+    prettier "^1.17.1"
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
@@ -4808,7 +4808,7 @@ prettier-package-json@^2.1.0:
     sort-object-keys "^1.1.2"
     sort-order "^1.0.1"
 
-prettier@^1.16.1, prettier@^1.17.1:
+prettier@^1.17.1:
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.1.tgz#ed64b4e93e370cb8a25b9ef7fef3e4fd1c0995db"
   integrity sha512-TzGRNvuUSmPgwivDqkZ9tM/qTGW9hqDKWOE9YHiyQdixlKbv7kvEqsmDPrcHJTKwthU774TQwZXVtaQ/mMsvjg==
