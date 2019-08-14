@@ -45,7 +45,7 @@
     "lint-staged": "^8.1.7",
     "prettier": "^1.17.1",
     "prettier-package-json": "^2.1.0",
-    "rimraf": "^2.6.3",
+    "rimraf": "^3.0.0",
     "stylelint": "^10.0.1"
   },
   "engines": {
