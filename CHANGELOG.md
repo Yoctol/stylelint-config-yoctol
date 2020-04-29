@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 4.0.0 / 2020-04-29
+
+- [breaking] upgraded `stylelint-config-standard` to `20`
+- [dep] bump other deps
+
 ## 3.0.0 / 2020-02-03
 
 - [breaking] requires `node>=10`, `stylelint>=13`
