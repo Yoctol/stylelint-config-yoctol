@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 4.0.1 / 2020-05-07
+
+- [fix] `value-keyword-case`: ignore `dummyValue` for `styled-component` usage
+
 ## 4.0.0 / 2020-04-29
 
 - [breaking] upgraded `stylelint-config-standard` to `20`
