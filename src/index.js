@@ -16,5 +16,6 @@ module.exports = {
       ],
       { unspecified: 'bottomAlphabetical' },
     ],
+    'value-keyword-case': ['lower', { ignoreKeywords: ['dummyValue'] }],
   },
 };
