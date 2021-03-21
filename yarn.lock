@@ -396,6 +396,15 @@
     "@babel/traverse" "^7.9.6"
     "@babel/types" "^7.9.6"
 
+"@babel/highlight@^7.10.4":
+  version "7.13.10"
+  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.13.10.tgz#a8b2a66148f5b27d666b15d81774347a731d52d1"
+  integrity sha512-5aPpe5XQPzflQrFwL1/QoeHkP2MsA4JCntcXHRhEsdsfPVkvPi2w7Qix4iV7t5S/oC9OodGrggd8aco1g3SZFg==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.12.11"
+    chalk "^2.0.0"
+    js-tokens "^4.0.0"
+
 "@babel/highlight@^7.12.13":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.12.13.tgz#8ab538393e00370b26271b01fa08f7f27f2e795c"
@@ -3466,10 +3475,10 @@ human-signals@^1.1.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
-husky@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-5.1.0.tgz#68b1148523acc838af0655ead71bf4671adb9f93"
-  integrity sha512-Os0EY2haOO+59YZSwMiUDsHY43RFwBVIRStHcnnT8/kvA+sFfaA/YS4uLFRiymXYgQl6E6TQTt3y4v/Z2ctEtw==
+husky@5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-5.2.0.tgz#fc5e1c2300d34855d47de4753607d00943fc0802"
+  integrity sha512-AM8T/auHXRBxlrfPVLKP6jt49GCM2Zz47m8G3FOMsLmTv8Dj/fKVWE0Rh2d4Qrvmy131xEsdQnb3OXRib67PGg==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24:
   version "0.4.24"
