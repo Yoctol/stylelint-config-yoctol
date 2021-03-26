@@ -30,8 +30,8 @@
     "stylelint": ">=13.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.12.16",
-    "@babel/preset-env": "7.12.16",
+    "@babel/core": "7.13.13",
+    "@babel/preset-env": "7.13.12",
     "babel-eslint": "10.1.0",
     "babel-jest": "26.6.3",
     "cross-env": "7.0.3",
