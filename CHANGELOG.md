@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 5.0.0 / 2021-03-29
+
+- [update] upgraded `stylelint-config-standard` to `21`
+- [dep] use `stylelint>=13.12` as peer deps
+- [dep] bump other deps
+
 ## 4.0.1 / 2020-05-07
 
 - [fix] `value-keyword-case`: ignore `dummyValue` for `styled-component` usage
