@@ -1,5 +1,6 @@
 {
   "name": "stylelint-config-yoctol",
+  "version": "5.0.0",
   "description": "Yoctol's stylelint config",
   "license": "MIT",
   "author": "Yoctol Info.",
@@ -7,13 +8,13 @@
     "type": "git",
     "url": "https://github.com/Yoctol/stylelint-config-yoctol.git"
   },
-  "version": "5.0.0",
   "main": "src/index.js",
   "files": [
     "src"
   ],
   "scripts": {
     "lint": "eslint .",
+    "prepare": "husky install",
     "test": "npm run lint && npm run testonly",
     "testonly": "jest",
     "testonly:watch": "jest --watch",
@@ -22,38 +23,33 @@
   "dependencies": {
     "css-property-sort-order-smacss": "^2.1.3",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^21.0.0",
+    "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0"
   },
   "peerDependencies": {
     "stylelint": ">=13.12.0"
   },
   "devDependencies": {
-    "@babel/core": "7.13.13",
-    "@babel/preset-env": "7.13.12",
-    "babel-eslint": "10.1.0",
-    "babel-jest": "26.6.3",
+    "@babel/core": "7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/preset-env": "7.15.0",
+    "babel-jest": "27.0.6",
     "cross-env": "7.0.3",
-    "eslint": "7.31.0",
+    "eslint": "7.32.0",
     "eslint-config-yoctol-base": "0.24.1",
-    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-import": "2.24.1",
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-sort-imports-es6-autofix": "0.6.0",
-    "husky": "4.3.8",
-    "jest": "26.6.3",
-    "lint-staged": "11.0.0",
-    "prettier": "2.2.1",
-    "prettier-package-json": "2.1.3",
+    "husky": "^6.0.0",
+    "jest": "27.0.6",
+    "lint-staged": "11.1.2",
+    "prettier": "2.3.2",
+    "prettier-package-json": "2.6.0",
     "rimraf": "3.0.2",
-    "stylelint": "13.12.0"
+    "stylelint": "13.13.1"
   },
   "engines": {
-    "node": ">=10"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "node": ">=12"
   },
   "jest": {
     "verbose": true,
