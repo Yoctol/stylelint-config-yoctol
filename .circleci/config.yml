@@ -4,7 +4,7 @@ references:
   docker_default: &docker_node_14
     working_directory: /tmp/app
     docker:
-      - image: cimg/node:14.17
+      - image: cimg/node:16.11
     environment:
       TZ: 'Asia/Taipei'
 
