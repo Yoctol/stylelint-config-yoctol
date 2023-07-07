@@ -46,7 +46,7 @@
     "prettier": "2.4.1",
     "prettier-package-json": "2.6.0",
     "rimraf": "3.0.2",
-    "stylelint": "13.13.1"
+    "stylelint": "15.10.1"
   },
   "engines": {
     "node": ">=12"
