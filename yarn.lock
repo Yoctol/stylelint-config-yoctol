@@ -1265,6 +1265,11 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
 
+"@types/parse-author@^2.0.0":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/parse-author/-/parse-author-2.0.3.tgz#fbf92ab0770f057483ba535c3087664f4b2800d5"
+  integrity sha512-pgRW2K/GVQoogylrGJXDl7PBLW9A6T4OOc9Hy9MLT5f7vgufK2GQ8FcfAbjFHR5HjcN9ByzuCczAORk49REqoA==
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -4285,11 +4290,12 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-package-json@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/prettier-package-json/-/prettier-package-json-2.6.0.tgz#624eeb604a4c19af146c1d1c824d31afd2690e2a"
-  integrity sha512-CS7utu4Jfm6xxCrIA4zZiOtNIwZhq0EyHnK01vmliV2QRU+L6/Ywy1tB6uUpT9Lwt5qpvRMHNApa6jxoRHfafA==
+prettier-package-json@2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/prettier-package-json/-/prettier-package-json-2.8.0.tgz#70aba2b4f7aeb4e294ae2191fb64b7d8fdea0398"
+  integrity sha512-WxtodH/wWavfw3MR7yK/GrS4pASEQ+iSTkdtSxPJWvqzG55ir5nvbLt9rw5AOiEcqqPCRM92WCtR1rk3TG3JSQ==
   dependencies:
+    "@types/parse-author" "^2.0.0"
     commander "^4.0.1"
     cosmiconfig "^7.0.0"
     fs-extra "^10.0.0"
